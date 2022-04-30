@@ -30,9 +30,9 @@
                         
                         <Label Grid.Row="2" Text="Pago Mensual"  VerticalOptions="Center"  VerticalTextAlignment="Center"/>
                         
-                        <Entry Grid.Row="3"  Grid.Column="1" x:Name="txtMensual"  IsEnabled="False"/>
+                        <Entry Grid.Row="2"  Grid.Column="1" x:Name="txtMensual"  IsEnabled="False"/>
 
-                        <Button Grid.Row="4" Grid.Column="1"  x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
+                        <Button Grid.Row="3" Grid.Column="1"  x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
                         
 
                     </Grid>
