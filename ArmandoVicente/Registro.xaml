@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArmandoVicente.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <StackLayout Margin="10,10,10,10" Padding="10,10,10,10" Background="#fff">
+
+                    <Label x:Name="lblUsuario" HorizontalOptions="Center" TextColor="#000" />
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="Nombre"  VerticalOptions="Center"   VerticalTextAlignment="Center" />
+                        <Entry  Grid.Column="1" x:Name="txtNombre" />
+
+                        <Label Grid.Row="1"  Text="Cuota Incial"    VerticalOptions="Center"  VerticalTextAlignment="Center"  />
+
+                        <Entry Grid.Row="1"  Grid.Column="1" x:Name="txtCuota"  Keyboard="Numeric"/>
+                        
+                        <Label Grid.Row="2" Text="Pago Mensual"  VerticalOptions="Center"  VerticalTextAlignment="Center"/>
+                        
+                        <Entry Grid.Row="3"  Grid.Column="1" x:Name="txtMensual"  IsEnabled="False"/>
+
+                        <Button Grid.Row="4" Grid.Column="1"  x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
+                        
+
+                    </Grid>
+
+                </StackLayout>
+
+
+
+                <Button   x:Name="btnGuardar" Text="Guardar"  Clicked="btnGuardar_Clicked" />
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

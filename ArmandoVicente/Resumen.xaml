@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArmandoVicente.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" HorizontalOptions="Center" TextColor="#000" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition />
+                  
+                </Grid.RowDefinitions >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Nombre"  VerticalOptions="Center"   VerticalTextAlignment="Center" />
+                <Label  Grid.Column="1" x:Name="lblNombre" />
+
+                <Label Grid.Row="1"  Text="Total A Pagar"    VerticalOptions="Center"  VerticalTextAlignment="Center"  />
+
+                <Label Grid.Row="1"  Grid.Column="1" x:Name="lbTotalPAgar" />
+
+                
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
